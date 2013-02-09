@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HeePopup</string>
+    <string name="hello">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="switch1">Switch</string>
+
+</resources>
