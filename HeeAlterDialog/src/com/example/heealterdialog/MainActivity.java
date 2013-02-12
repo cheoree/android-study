@@ -31,12 +31,15 @@ public class MainActivity extends FragmentActivity implements OnClickListener {
 
 	@Override
 	public void onClick(View arg0) {
+		// 기존방식 deprecated 된 방
 		//showDialog(0);
 		
+		// Fragment를 이용하는 방식
 		DialogFragment newFragment = AlertDialogFragment.newInstance(0);
 	    newFragment.show(getSupportFragmentManager(), "dialog");
 	}
 
+	// 기존 방
 	/*
 	@Override
 	protected Dialog onCreateDialog(int id) {

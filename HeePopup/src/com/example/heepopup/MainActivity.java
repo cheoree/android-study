@@ -19,6 +19,8 @@ public class MainActivity extends Activity implements OnClickListener {
 		setContentView(R.layout.activity_main);
 		
 		objTGButton = (ToggleButton)findViewById(R.id.tgbtnSwitch);
+		
+		// 토글 버튼에 click listener 등
 		objTGButton.setOnClickListener(this);
 	}
 
@@ -30,6 +32,7 @@ public class MainActivity extends Activity implements OnClickListener {
 		TextView objTV;
 		
 		if (objTGButton.isChecked()) {
+			// 토글 버튼이 On 경우 커스 layout에 이미지와 텍스트를 child로 붙이고 토스트에 set 한 후 보여
 			objToast = new Toast(this);
 			objLayout = new LinearLayout(this);
 			objLayout.setOrientation(LinearLayout.VERTICAL);
@@ -46,6 +49,7 @@ public class MainActivity extends Activity implements OnClickListener {
 			objToast.setDuration(Toast.LENGTH_LONG);
 			objToast.show();
 		} else {
+			// 토글 버튼이 Off 인 경우 토스트에 텍스트만을 보여줌 
 			objToast = Toast.makeText(this, "Turn-off Lamp", Toast.LENGTH_SHORT);
 			objToast.show();
 		}
