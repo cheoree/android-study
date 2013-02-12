@@ -23,6 +23,7 @@ public class GestureView extends View {
 		super(context);
 		girlImage = BitmapFactory.decodeResource(this.getResources(), R.drawable.ic_launcher);
 		
+		// 여기서는 별도로 GestureListener를 구현하는 클래스를 만들어서 등록 
 		gesture = new GestureDetector(new OnGesture());
 	}
 
